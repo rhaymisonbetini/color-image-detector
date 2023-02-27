@@ -1,0 +1,19 @@
+{
+  "name": "color-image-detector",
+  "version": "1.0.0",
+  "description": "get pallet of color from a given imagem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhaymisonbetini/color-image-detector.git"
+  },
+  "author": "rhaymisonbetini <rhaymisoncristian@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhaymisonbetini/color-image-detector/issues"
+  },
+  "homepage": "https://github.com/rhaymisonbetini/color-image-detector#readme"
+}
