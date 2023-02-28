@@ -2,7 +2,9 @@
 
 This javascript library was developed to extract the color palette of a provided image. <br/> 
 This feature is used in several systems such as Instagram (in the story part) or even Spotify <br/> 
-for background colors of some playlist <br/> <br
+for background colors of some playlist <br/> 
+
+*Only for JPG, JPEG and PNG files
 
 ### INSTALL
 
