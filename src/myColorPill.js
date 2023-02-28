@@ -2,7 +2,7 @@
 
 class MyColorPill {
 
-    buildPalette = (colorsList) => {
+    buildPalette(colorsList) {
 
         let colorHs = []
         let colorComple = []
@@ -33,7 +33,7 @@ class MyColorPill {
         }
     };
 
-    rgbToHex = (pixel) => {
+    rgbToHex(pixel) {
         const componentToHex = (c) => {
             const hex = c.toString(16);
             return hex.length == 1 ? "0" + hex : hex;
@@ -46,7 +46,7 @@ class MyColorPill {
             componentToHex(pixel.b)
         ).toUpperCase();
     };
-    hslToHex = (hslColor) => {
+    hslToHex(hslColor) {
         const hslColorCopy = { ...hslColor };
         hslColorCopy.l /= 100;
         const a =
@@ -60,7 +60,7 @@ class MyColorPill {
         };
         return `#${f(0)}${f(8)}${f(4)}`.toUpperCase();
     };
-    convertRGBtoHSL = (rgbValues) => {
+    convertRGBtoHSL(rgbValues) {
         return rgbValues.map((pixel) => {
             let hue,
                 saturation,
@@ -111,7 +111,7 @@ class MyColorPill {
         });
     };
 
-    orderByLuminance = (rgbValues) => {
+    orderByLuminance(rgbValues) {
         const calculateLuminance = (p) => {
             return 0.2126 * p.r + 0.7152 * p.g + 0.0722 * p.b;
         };
@@ -121,7 +121,7 @@ class MyColorPill {
         });
     };
 
-    buildRgb = (imageData) => {
+    buildRgb(imageData) {
         const rgbValues = [];
         for (let i = 0; i < imageData.length; i += 4) {
             const rgb = {
@@ -136,7 +136,7 @@ class MyColorPill {
         return rgbValues;
     };
 
-    calculateColorDifference = (color1, color2) => {
+    calculateColorDifference(color1, color2) {
         const rDifference = Math.pow(color2.r - color1.r, 2);
         const gDifference = Math.pow(color2.g - color1.g, 2);
         const bDifference = Math.pow(color2.b - color1.b, 2);
@@ -144,7 +144,7 @@ class MyColorPill {
         return rDifference + gDifference + bDifference;
     };
 
-    findBiggestColorRange = (rgbValues) => {
+    findBiggestColorRange(rgbValues) {
         let rMin = Number.MAX_VALUE;
         let gMin = Number.MAX_VALUE;
         let bMin = Number.MAX_VALUE;
@@ -176,7 +176,7 @@ class MyColorPill {
             return "b";
         }
     };
-    quantization = (rgbValues, depth) => {
+    quantization(rgbValues, depth) {
         const MAX_DEPTH = 4;
         if (depth === MAX_DEPTH || rgbValues.length === 0) {
             const color = rgbValues.reduce(
@@ -213,7 +213,7 @@ class MyColorPill {
         ];
     };
 
-    getMyColorPill = async (id) => {
+    async getMyColorPill(id) {
         return new Promise((resolve, reject) => {
             const imgFile = document.getElementById(id);
             const image = new Image();

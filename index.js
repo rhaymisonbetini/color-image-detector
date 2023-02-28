@@ -1,6 +1,6 @@
 'use strict'
 
-const colorPill = require('./src/myColorPill');
+const colorPill = require('./src/myColorPill.js');
 
 
 class ColorDetector{

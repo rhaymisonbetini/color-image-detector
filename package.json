@@ -1,6 +1,6 @@
 {
   "name": "color-image-detector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "get pallet of color from a given imagem",
   "keywords": ["colors","javascript","image","color-detector"],
   "main": "index.js",
