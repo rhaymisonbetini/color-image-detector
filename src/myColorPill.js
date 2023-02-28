@@ -220,6 +220,10 @@ class MyColorPill {
             const file = imgFile.files[0];
             const fileReader = new FileReader();
             let pallet = {}
+            let mymes = ['image/jpeg', 'image/png']
+            if (!mymes.includes(file.type)) {
+                resolve({ error: 'myme type is not supported' })
+            }
             fileReader.onload = async () => {
                 image.onload = async () => {
                     const canvas = document.getElementById("canvas");
