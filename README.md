@@ -9,7 +9,8 @@ for background colors of some playlist <br/>
 <p align="center">
    <img src="https://img.shields.io/bower/l/MI?style=flat-square">
    <img src="https://img.shields.io/badge/version-1.0.1-blue">
-   <img src="https://img.shields.io/github/downloads/rhaymisonbetini/color-image-detector.svg">
+   <img alt="npm" src="https://img.shields.io/npm/dm/color-image-detector">
+   <img alt="npm" src="https://img.shields.io/npm/dw/color-image-detector">
    <img src="https://img.shields.io/badge/coverage-100%25-yellowgree" alt="coverage">
    <img src="https://img.shields.io/github/issues/rhaymisonbetini/color-image-detector.svg">
    <img src="https://img.shields.io/github/issues-closed/rhaymisonbetini/color-image-detector.svg">
