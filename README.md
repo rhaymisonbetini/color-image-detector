@@ -8,7 +8,7 @@ for background colors of some playlist <br/>
 
 <p align="center">
    <img src="https://img.shields.io/bower/l/MI?style=flat-square">
-   <img src="https://img.shields.io/badge/version-1.0.2-blue">
+   <img src="https://img.shields.io/badge/version-1.0.3-blue">
    <img alt="npm" src="https://img.shields.io/npm/dm/color-image-detector">
    <img alt="npm" src="https://img.shields.io/npm/dw/color-image-detector">
    <img src="https://img.shields.io/badge/coverage-100%25-yellowgree" alt="coverage">
